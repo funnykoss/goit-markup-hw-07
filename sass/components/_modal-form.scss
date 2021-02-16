@@ -1,0 +1,159 @@
+.modal-form-field {
+  margin-bottom: 10px;
+}
+
+.modal-input-thumb {
+  position: relative;
+  display: block;
+
+  margin-top: 4px;
+  color: #000000;
+}
+
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  fill: currentColor;
+
+  transition-property: fill;
+  transition-duration: var(--time-animation);
+  transition-timing-function: var(--bezier-animation);
+}
+
+.modal-form-title {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+}
+
+.modal-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--title-text-color);
+}
+
+.modal-input {
+  display: block;
+  margin: 0;
+  padding: 11px 40px;
+  width: 100%;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color;
+  transition-duration: var(--time-animation);
+  transition-timing-function: var(--bezier-animation);
+}
+
+.modal-input:focus + .modal-icon,
+.modal-input:hover + .modal-icon {
+  fill: var(--accent-color);
+}
+
+.modal-input:focus,
+.textarea-field:focus,
+.modal-input:hover,
+.textarea-field:hover {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.textarea-field {
+  padding: 11px 16px;
+  resize: none;
+  width: 448px;
+  height: 120px;
+
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color;
+  transition-duration: var(--time-animation);
+  transition-timing-function: var(--bezier-animation);
+}
+
+.textarea-field::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-textarea {
+  margin-bottom: 20px;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.modal-label-checkbox::before {
+  position: absolute;
+  content: " ";
+  display: inline-block;
+  top: 50%;
+  left: 7px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
+  margin-right: 7px;
+}
+
+.checkbox:checked + .modal-label-checkbox::before {
+  background-color: var(--accent-color);
+  background-image: url(../imeges/checkbox/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--accent-color);
+}
+
+.checkbox:focus + .modal-label-checkbox::before {
+  border-color: var(--accent-color);
+}
+
+.modal-checkbox {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.modal-label-checkbox {
+  display: block;
+  text-align: center;
+  padding-left: 10px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+
+.conditios {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.textarea-thumb {
+  margin-top: 4px;
+  display: block;
+}

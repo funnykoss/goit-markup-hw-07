@@ -1,0 +1,49 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-list {
+  display: flex;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  color: var(--icon-color);
+
+  transition-property: border-color;
+  transition-duration: var(--time-animation);
+  transition-timing-function: var(--bezier-animation);
+}
+
+.client-items {
+  fill: currentColor;
+
+  transition-property: fill;
+  transition-duration: var(--time-animation);
+  transition-timing-function: var(--bezier-animation);
+}
+
+.clients-thumbs {
+  width: 170px;
+  height: 90px;
+}
+
+.clients-thumbs:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link:hover,
+.clients-link:focus,
+.clients-link:hover .client-items,
+.clients-link:focus .client-items {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}

@@ -11,18 +11,18 @@
   letter-spacing: 0.06em;
   cursor: pointer;
 
-  background-color: $accent-color;
-  color: $background-color;
+  background-color: var(--accent-color);
+  color: var(--background-color);
 
   transition-property: background-color, box-shadow;
-  transition-duration: $time-animation;
-  transition-timing-function: $main-bg-color;
+  transition-duration: var(--time-animation);
+  transition-timing-function: var(--main-bg-color);
+}
 
-  &:hover,
-  &:focus {
-    background-color: #188ce8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
+.buttons.primary:hover,
+.buttons.primary:focus {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .buttons-filters {
