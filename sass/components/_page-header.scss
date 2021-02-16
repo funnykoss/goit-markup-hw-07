@@ -1,0 +1,130 @@
+.page-header {
+  @extend %container;
+  display: flex;
+  align-items: center;
+
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.site-nav {
+  @extend %list;
+  display: flex;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: var(--primary-text-color);
+
+  transition-property: color;
+  transition-duration: var(--time-animation);
+  transition-timing-function: var(--bezier-animation);
+
+  &-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.site-nav-link {
+  @extend %link;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: $primary-text-color;
+
+  transition-property: color;
+  transition-duration: $time-animation;
+  transition-timing-function: $bezier-animation;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+}
+
+.site-nav-link.current {
+  position: relative;
+  color: $accent-color;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+  }
+}
+/* contacts-nav */
+
+.contacts-nav {
+  @extend %list;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+
+  &-link {
+    @extend %link;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: $title-text-color;
+
+    transition-property: color;
+    transition-duration: $time-animation;
+    transition-timing-function: $bezier-animation;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      fill: $accent-color;
+    }
+  }
+  &-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.icon-mail {
+  display: block;
+  margin-right: 10px;
+  fill: currentColor;
+
+  transition-property: fill;
+  transition-duration: $time-animation;
+  transition-timing-function: $bezier-animation;
+}
+
+.icon-phone {
+  display: block;
+  margin-right: 10px;
+  fill: currentColor;
+
+  transition-property: fill;
+  transition-duration: $time-animation;
+  transition-timing-function: $bezier-animation;
+}
