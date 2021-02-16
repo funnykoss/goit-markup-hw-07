@@ -1,25 +1,11 @@
-.modal-form-field {
-  margin-bottom: 10px;
-}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  width: 448px;
 
-.modal-input-thumb {
-  position: relative;
-  display: block;
-
-  margin-top: 4px;
-  color: #000000;
-}
-
-.modal-icon {
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  transform: translateY(-50%);
-  fill: currentColor;
-
-  transition-property: fill;
-  transition-duration: var(--time-animation);
-  transition-timing-function: var(--bezier-animation);
+  &-field {
+    margin-bottom: 10px;
+  }
 }
 
 .modal-form-title {
@@ -32,17 +18,19 @@
   letter-spacing: 0.03em;
 }
 
-.modal-form {
-  display: flex;
-  flex-direction: column;
-  width: 448px;
-}
-
 .modal-label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--title-text-color);
+}
+
+.modal-input-thumb {
+  position: relative;
+  display: block;
+
+  margin-top: 4px;
+  color: #000000;
 }
 
 .modal-input {
@@ -56,19 +44,38 @@
   transition: border-color;
   transition-duration: var(--time-animation);
   transition-timing-function: var(--bezier-animation);
+
+  &:focus,
+  &:hover {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
 
-.modal-input:focus + .modal-icon,
-.modal-input:hover + .modal-icon {
-  fill: var(--accent-color);
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  fill: currentColor;
+
+  transition-property: fill;
+  transition-duration: var(--time-animation);
+  transition-timing-function: var(--bezier-animation);
+
+  .modal-input:focus + &,
+  .modal-input:hover + & {
+    fill: var(--accent-color);
+  }
 }
 
-.modal-input:focus,
-.textarea-field:focus,
-.modal-input:hover,
-.textarea-field:hover {
-  outline: none;
-  border-color: var(--accent-color);
+.modal-textarea {
+  margin-bottom: 20px;
+}
+
+.textarea-thumb {
+  margin-top: 4px;
+  display: block;
 }
 
 .textarea-field {
@@ -85,14 +92,16 @@
   transition: border-color;
   transition-duration: var(--time-animation);
   transition-timing-function: var(--bezier-animation);
+
+  &:focus,
+  &:hover {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
 
 .textarea-field::placeholder {
   color: rgba(117, 117, 117, 0.5);
-}
-
-.modal-textarea {
-  margin-bottom: 20px;
 }
 
 .checkbox {
@@ -151,9 +160,4 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-}
-
-.textarea-thumb {
-  margin-top: 4px;
-  display: block;
 }

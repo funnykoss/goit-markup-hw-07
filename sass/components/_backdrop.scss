@@ -10,13 +10,32 @@
   transition-property: opacity;
   transition-duration: var(--time-animation);
   transition-timing-function: var(--bezier-animation);
-}
 
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  display: flex;
+  justify-content: flex-end;
+
+  padding: 40px 40px;
+  width: 528px;
+  height: 581px;
+  background-color: var(--background-color);
+
+  transition-property: transform;
+  transition-duration: var(--time-animation);
+  transition-timing-function: var(--bezier-animation);
 }
