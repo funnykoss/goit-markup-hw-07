@@ -14,9 +14,7 @@
   display: block;
   margin-bottom: 20px;
 
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  @include font(26px, 700, 1.19);
   letter-spacing: 0.03em;
 
   color: $background-color;
@@ -57,8 +55,8 @@
 
     color: $main-lite-color;
     font-style: normal;
-
     text-decoration: none;
+
     &:hover,
     &:focus {
       color: $accent-color;
@@ -80,9 +78,7 @@
 .social-footer-text {
   margin-bottom: 20px;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(14px, 700, 1.14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $background-color;
@@ -138,9 +134,8 @@
   margin-right: 12px;
 
   .form-field-input::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
+    @include font(16px, 400, 1.25);
+
     align-items: center;
     letter-spacing: 0.03em;
 
@@ -162,10 +157,7 @@
 
 .subscribe-footer-text {
   margin-bottom: 20px;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(14px, 700, 1.14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $background-color;

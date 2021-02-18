@@ -102,8 +102,8 @@ img {
 .section-title {
   margin-bottom: 50px;
   text-align: center;
-  font-weight: 700;
   font-size: 36px;
+  font-weight: 700;
   line-height: 1.16;
   letter-spacing: 0.03em;
 }
@@ -183,8 +183,8 @@ img {
 
 .modal-form-title {
   margin-bottom: 12px;
-  font-weight: 700;
   font-size: 20px;
+  font-weight: 700;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
@@ -332,8 +332,8 @@ img {
 
 .btn-send {
   padding: 10px 56px;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
   min-width: 200px;
@@ -360,8 +360,8 @@ img {
   padding-bottom: 24px;
   margin-right: 93px;
   font-family: Raleway, sans-serif;
-  font-weight: 700;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
@@ -371,8 +371,8 @@ img {
 
 .logo-accent {
   font-family: Raleway, sans-serif;
-  font-weight: 700;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.23;
   letter-spacing: 0.03em;
   color: #2196f3;
@@ -487,8 +487,8 @@ img {
   margin-right: auto;
   margin-bottom: 30px;
   max-width: 696px;
-  font-weight: 900;
   font-size: 44px;
+  font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -563,8 +563,8 @@ img {
 }
 
 .examples-articles-text {
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -737,8 +737,8 @@ img {
 .footer-logo {
   display: block;
   margin-bottom: 20px;
-  font-weight: 700;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #ffffff;
@@ -789,8 +789,8 @@ img {
 
 .social-footer-text {
   margin-bottom: 20px;
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -843,8 +843,8 @@ img {
 }
 
 .form-field .form-field-input::placeholder {
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.25;
   align-items: center;
   letter-spacing: 0.03em;
@@ -865,8 +865,8 @@ img {
 
 .subscribe-footer-text {
   margin-bottom: 20px;
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
