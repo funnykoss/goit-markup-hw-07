@@ -14,7 +14,7 @@
 
   transition-property: background-color, box-shadow;
   transition-duration: $time-animation;
-  transition-timing-function: $main-bg-color;
+  transition-timing-function: $bezier-animation;
 
   &:hover,
   &:focus {
