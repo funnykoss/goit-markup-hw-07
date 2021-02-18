@@ -280,6 +280,20 @@ img {
   clip: rect(0 0 0 0);
 }
 
+.modal-checkbox {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.modal-label-checkbox {
+  display: block;
+  text-align: center;
+  padding-left: 10px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
 .modal-label-checkbox::before {
   position: absolute;
   content: " ";
@@ -302,22 +316,8 @@ img {
   border-color: #2196f3;
 }
 
-.checkbox:focus + .modal-label-checkbox::before {
+.checkbox:focus + .checkbox:checked + .modal-label-checkbox::before {
   border-color: #2196f3;
-}
-
-.modal-checkbox {
-  position: relative;
-  margin-bottom: 28px;
-}
-
-.modal-label-checkbox {
-  display: block;
-  text-align: center;
-  padding-left: 10px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
 }
 
 .conditios {
@@ -482,7 +482,7 @@ img {
   background-color: #c4c4c4;
 }
 
-.hero -title {
+.hero-title {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;

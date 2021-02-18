@@ -115,32 +115,6 @@
   clip: rect(0 0 0 0);
 }
 
-.modal-label-checkbox::before {
-  position: absolute;
-  content: " ";
-  display: inline-block;
-  top: 50%;
-  left: 7px;
-  transform: translateY(-50%);
-  width: 16px;
-  height: 15px;
-  border: 2px solid $primary-text-color;
-  border-radius: 2px;
-  margin-right: 7px;
-}
-
-.checkbox:checked + .modal-label-checkbox::before {
-  background-color: $accent-color;
-  background-image: url(../imeges/checkbox/icon-check.svg);
-  background-size: contain;
-  background-origin: border-box;
-  border-color: $accent-color;
-}
-
-.checkbox:focus + .modal-label-checkbox::before {
-  border-color: $accent-color;
-}
-
 .modal-checkbox {
   position: relative;
   margin-bottom: 28px;
@@ -154,6 +128,32 @@
   letter-spacing: 0.03em;
 
   color: $title-text-color;
+
+  &::before {
+    position: absolute;
+    content: " ";
+    display: inline-block;
+    top: 50%;
+    left: 7px;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 15px;
+    border: 2px solid $primary-text-color;
+    border-radius: 2px;
+    margin-right: 7px;
+
+    .checkbox:checked + & {
+      background-color: $accent-color;
+      background-image: url(../imeges/checkbox/icon-check.svg);
+      background-size: contain;
+      background-origin: border-box;
+      border-color: $accent-color;
+
+      .checkbox:focus + & {
+        border-color: $accent-color;
+      }
+    }
+  }
 }
 
 .conditios {
