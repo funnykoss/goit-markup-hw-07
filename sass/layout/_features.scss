@@ -1,6 +1,5 @@
 .section-features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @include padding(94px, 94px);
 }
 
 .features {
@@ -9,9 +8,8 @@
 }
 
 .features-thumbs {
-  display: flex;
+  @extend %flex;
   justify-content: center;
-  align-items: center;
   margin-bottom: 30px;
 
   width: 270px;

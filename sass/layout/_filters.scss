@@ -5,12 +5,12 @@
   transition-property: background-color, color;
   transition-duration: $time-animation;
   transition-timing-function: $bezier-animation;
-}
 
-.filters-items .filter-all:first-child:hover,
-.filters-items .filter-all:first-child:focus {
-  background-color: $main-bg-color;
-  color: $primary-text-color;
+  &:first-child:hover,
+  &:first-child:focus {
+    background-color: $main-bg-color;
+    color: $primary-text-color;
+  }
 }
 
 .section-filters {
@@ -18,6 +18,9 @@
   justify-content: center;
   margin-bottom: 50px;
 }
-.filters-items:not(:last-child) {
-  margin-right: 8px;
+
+.filters-items {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }

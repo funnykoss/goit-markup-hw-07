@@ -2,9 +2,8 @@
   position: absolute;
   top: 8px;
   right: 8px;
-  display: flex;
+  @extend %flex;
   justify-content: center;
-  align-items: center;
 
   background-color: $background-color;
   width: 30px;

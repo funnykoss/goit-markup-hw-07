@@ -1,6 +1,5 @@
 .section-wokers {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @include padding(94px, 94px);
 
   background-color: $main-bg-color;
 }
@@ -23,30 +22,29 @@
 }
 
 .card-description {
-  padding-top: 30px;
+  @include padding(30px, 30px);
   padding-left: 32px;
   padding-right: 32px;
-  padding-bottom: 30px;
+}
 
-  &-title {
-    margin-bottom: 10px;
+.card-description-title {
+  margin-bottom: 10px;
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.187;
-    letter-spacing: 0.03em;
-    text-align: center;
-  }
-  &-text {
-    margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.card-description-text {
+  margin-bottom: 16px;
 
-    font-size: 16px;
-    line-height: 1.187;
-    letter-spacing: 0.03em;
-    text-align: center;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+  text-align: center;
 
-    color: $title-text-color;
-  }
+  color: $title-text-color;
 }
 
 .team-img {
@@ -59,9 +57,8 @@
 }
 
 .social-link {
-  display: flex;
+  @extend %flex;
   justify-content: center;
-  align-items: center;
   color: $icon-color;
 
   width: 100%;

@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   width: 448px;
+}
 
-  &-field {
-    margin-bottom: 10px;
-  }
+.modal-form-field {
+  margin-bottom: 10px;
 }
 
 .modal-form-title {
@@ -98,10 +98,10 @@
     outline: none;
     border-color: $accent-color;
   }
-}
 
-.textarea-field::placeholder {
-  color: rgba(117, 117, 117, 0.5);
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .checkbox {
