@@ -1,16 +1,16 @@
 .filters-items .filter-all {
-  background-color: var(--accent-color);
-  color: var(--main-bg-color);
+  background-color: $accent-color;
+  color: $main-bg-color;
 
   transition-property: background-color, color;
-  transition-duration: var(--time-animation);
-  transition-timing-function: var(--bezier-animation);
+  transition-duration: $time-animation;
+  transition-timing-function: $bezier-animation;
 }
 
 .filters-items .filter-all:first-child:hover,
 .filters-items .filter-all:first-child:focus {
-  background-color: var(--main-bg-color);
-  color: var(--primary-text-color);
+  background-color: $main-bg-color;
+  color: $primary-text-color;
 }
 
 .section-filters {

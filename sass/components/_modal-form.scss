@@ -22,7 +22,7 @@
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 
 .modal-input-thumb {
@@ -42,13 +42,13 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color;
-  transition-duration: var(--time-animation);
-  transition-timing-function: var(--bezier-animation);
+  transition-duration: $time-animation;
+  transition-timing-function: $bezier-animation;
 
   &:focus,
   &:hover {
     outline: none;
-    border-color: var(--accent-color);
+    border-color: $accent-color;
   }
 }
 
@@ -60,12 +60,12 @@
   fill: currentColor;
 
   transition-property: fill;
-  transition-duration: var(--time-animation);
-  transition-timing-function: var(--bezier-animation);
+  transition-duration: $time-animation;
+  transition-timing-function: $bezier-animation;
 
   .modal-input:focus + &,
   .modal-input:hover + & {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
 }
 
@@ -90,13 +90,13 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color;
-  transition-duration: var(--time-animation);
-  transition-timing-function: var(--bezier-animation);
+  transition-duration: $time-animation;
+  transition-timing-function: $bezier-animation;
 
   &:focus,
   &:hover {
     outline: none;
-    border-color: var(--accent-color);
+    border-color: $accent-color;
   }
 }
 
@@ -124,21 +124,21 @@
   transform: translateY(-50%);
   width: 16px;
   height: 15px;
-  border: 2px solid var(--primary-text-color);
+  border: 2px solid $primary-text-color;
   border-radius: 2px;
   margin-right: 7px;
 }
 
 .checkbox:checked + .modal-label-checkbox::before {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   background-image: url(../imeges/checkbox/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
-  border-color: var(--accent-color);
+  border-color: $accent-color;
 }
 
 .checkbox:focus + .modal-label-checkbox::before {
-  border-color: var(--accent-color);
+  border-color: $accent-color;
 }
 
 .modal-checkbox {
@@ -153,11 +153,11 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 
 .conditios {
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--accent-color);
+  color: $accent-color;
 }

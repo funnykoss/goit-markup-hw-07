@@ -1,10 +1,10 @@
 body {
-  font-family: var(--main-font);
+  font-family: $main-font;
   font-weight: 400;
   font-size: 14px;
 
-  background-color: var(--background-color);
-  color: var(--primary-text-color);
+  background-color: $background-color;
+  color: $primary-text-color;
 }
 
 .list {

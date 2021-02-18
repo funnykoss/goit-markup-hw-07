@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
 
-  background-color: var(--background-color);
+  background-color: $background-color;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -17,7 +17,7 @@
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 
@@ -25,6 +25,6 @@
   fill: currentColor;
 
   transition-property: color;
-  transition-duration: var(--time-animation);
-  transition-timing-function: var(--bezier-animation);
+  transition-duration: $time-animation;
+  transition-timing-function: $bezier-animation;
 }

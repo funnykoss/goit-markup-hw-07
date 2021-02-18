@@ -8,8 +8,8 @@
 
   opacity: 1;
   transition-property: opacity;
-  transition-duration: var(--time-animation);
-  transition-timing-function: var(--bezier-animation);
+  transition-duration: $time-animation;
+  transition-timing-function: $bezier-animation;
 
   &.is-hidden {
     opacity: 0;
@@ -33,9 +33,9 @@
   padding: 40px 40px;
   width: 528px;
   height: 581px;
-  background-color: var(--background-color);
+  background-color: $background-color;
 
   transition-property: transform;
-  transition-duration: var(--time-animation);
-  transition-timing-function: var(--bezier-animation);
+  transition-duration: $time-animation;
+  transition-timing-function: $bezier-animation;
 }
